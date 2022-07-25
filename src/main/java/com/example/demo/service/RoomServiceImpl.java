@@ -35,9 +35,7 @@ public class RoomServiceImpl implements RoomService {
 	}
 
 	@Override
-	public Room addRoom(Room room) throws RoomAlreadyExistException, Exception, RoomCountException {
-		// RoomDao.save(Room);
-		// return Room;
+	public Room addRoom(Room room) throws RoomAlreadyExistException, Exception, RoomCountException,RoomFieldsEmptyException {
 		Optional<Room> roomcheck = RoomDao.findById(room.getId());
 
 		if (roomcheck.isPresent()) {

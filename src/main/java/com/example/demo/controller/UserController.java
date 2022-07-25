@@ -1,6 +1,8 @@
 package com.example.demo.controller;
 
 import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,6 +16,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.entity.User;
+import com.example.demo.exception.RoomFieldsEmptyException;
+import com.example.demo.exception.UserAlreadyExistException;
+import com.example.demo.exception.UserFieldsEmptyException;
+import com.example.demo.exception.UserNotFoundException;
 import com.example.demo.service.UserService;
 
 @RestController
@@ -30,19 +36,19 @@ public class UserController {
 	}
 
 	@GetMapping("/User/{UserId}")
-	public ResponseEntity<User> getUser(@PathVariable int UserId) {
+	public ResponseEntity<Optional<User>> getUser(@PathVariable long UserId) {
 
 		return ResponseEntity.status(HttpStatus.OK).body(this.UserService.getUser((UserId)));
 	}
 	
 	@PostMapping("/addUser")
-	public ResponseEntity<User> addUser(@RequestBody User User) {
+	public ResponseEntity<User> addUser(@RequestBody User User) throws UserAlreadyExistException,UserFieldsEmptyException, RoomFieldsEmptyException {
 
 		return ResponseEntity.status(HttpStatus.OK).body(this.UserService.addUser(User));
 	}
 
 	@DeleteMapping("/User/{UserId}")
-	public ResponseEntity<Object> deleteCourse(@PathVariable int UserId) {
+	public ResponseEntity<Object> deleteCourse(@PathVariable long UserId) throws UserNotFoundException{
 
 		this.UserService.deleteUser(UserId);
 		return new ResponseEntity<>(HttpStatus.OK);

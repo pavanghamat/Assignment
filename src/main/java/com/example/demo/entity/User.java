@@ -8,11 +8,11 @@ public class User {
 	
 	@Id
 	private String username;
-	private int userid;
+	private long userid;
 	private String password;
 	
 	
-	public int getUserid() {
+	public long getUserid() {
 		return userid;
 	}
 	public void setUserid(int userid) {
@@ -34,7 +34,7 @@ public class User {
 	public String toString() {
 		return "User [userid=" + userid + ", username=" + username + ", password=" + password + "]";
 	}
-	public User(int userid, String username, String password) {
+	public User(long userid, String username, String password) {
 		super();
 		this.userid = userid;
 		this.username = username;

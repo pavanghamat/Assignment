@@ -1,12 +1,16 @@
 package com.example.demo.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.dao.UserDao;
 import com.example.demo.entity.User;
+import com.example.demo.exception.RoomFieldsEmptyException;
+import com.example.demo.exception.UserAlreadyExistException;
+import com.example.demo.exception.UserNotFoundException;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -21,14 +25,37 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public User addUser(User user) {
+	public User addUser(User user) throws UserAlreadyExistException, RoomFieldsEmptyException {
+		/*
+		 * UserDao.save(user); return user;
+		 */
 
-		UserDao.save(user);
-		return user;
+		Optional<User> usercheck = UserDao.findById(user.getUserid());
+
+		if (usercheck.isPresent()) {
+			throw new UserAlreadyExistException("User already exist");
+		}
+
+		else {
+			if (user.getUserid() == 0 || user.getUsername().isEmpty() || user.getPassword().isEmpty()) {
+				throw new RoomFieldsEmptyException("Input fields are missing");
+			} else {
+
+				UserDao.save(user);
+				return user;
+			}
+		}
 	}
 
 	@Override
-	public void deleteUser(int UserId) {
+	public void deleteUser(long parseLong) throws UserNotFoundException {
+
+		if (UserDao.findById(parseLong).isEmpty()) {
+			throw new UserNotFoundException("User is not available");
+
+		} else {
+			UserDao.deleteById(parseLong);
+		}
 	}
 
 	@Override
@@ -38,8 +65,9 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public User getUser(int UserId) {
-		// TODO Auto-generated method stub
-		return null;
+	public Optional<User> getUser(long UserId) {
+
+		return UserDao.findById(UserId);
 	}
+
 }

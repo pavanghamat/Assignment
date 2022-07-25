@@ -33,6 +33,19 @@ public class GlobalExceptionHandler {
 	public ResponseEntity<String>roomCountException(RoomCountException roomCountException){
 		return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(roomCountException.getMessage());
 	}
+	//***************************************************************************************************************************************************
+	//***************************************************************************************************************************************************
+	//***************************************************************************************************************************************************
+
+	@ResponseBody
+	@ExceptionHandler(UserNotFoundException.class)
+	public ResponseEntity<String> userNotFoundException(UserNotFoundException userNotFoundException){
+		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(userNotFoundException.getMessage());	
+	}
+
 }
+
+
+
 
 

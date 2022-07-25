@@ -19,6 +19,7 @@ import com.example.demo.service.RoomService;
 import com.example.demo.entity.Room;
 
 import com.example.demo.exception.RoomAlreadyExistException;
+import com.example.demo.exception.RoomCountException;
 import com.example.demo.exception.RoomFieldsEmptyException;
 import com.example.demo.exception.RoomNotFoundException;
 
@@ -43,7 +44,7 @@ public class MyController {
 	}
 
 	@PostMapping("/addRooms")
-	public ResponseEntity<Room> addRoom(@RequestBody Room Room) throws Exception {
+	public ResponseEntity<Room> addRoom(@RequestBody Room Room) throws Exception,RoomAlreadyExistException,RoomCountException,RoomFieldsEmptyException {
 		return ResponseEntity.status(HttpStatus.OK).body(this.RoomService.addRoom(Room));
 	}
 

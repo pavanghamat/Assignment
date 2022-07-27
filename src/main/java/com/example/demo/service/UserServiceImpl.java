@@ -10,6 +10,7 @@ import com.example.demo.dao.UserDao;
 import com.example.demo.entity.User;
 import com.example.demo.exception.RoomFieldsEmptyException;
 import com.example.demo.exception.UserAlreadyExistException;
+import com.example.demo.exception.UserFieldsEmptyException;
 import com.example.demo.exception.UserNotFoundException;
 
 @Service
@@ -25,10 +26,16 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
+	public Optional<User> getUser(long UserId) throws UserNotFoundException {
+		if (UserDao.findById(UserId).isEmpty()) {
+			throw new UserNotFoundException("User not found");
+		} else {
+			return UserDao.findById(UserId);
+		}
+	}
+
+	@Override
 	public User addUser(User user) throws UserAlreadyExistException, RoomFieldsEmptyException {
-		/*
-		 * UserDao.save(user); return user;
-		 */
 
 		Optional<User> usercheck = UserDao.findById(user.getUserid());
 
@@ -59,15 +66,20 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public User updateUser(User User) {
-		UserDao.save(User);
-		return User;
-	}
+	public User updateUser(User user)
+			throws UserNotFoundException, UserFieldsEmptyException {
+		if (UserDao.findById(user.getUserid()).isEmpty()) {
+			throw new UserNotFoundException("User not found");
+		} else {
+			if (user.getUserid() == 0 || user.getUsername().isEmpty() || user.getPassword().isEmpty()) {
+				throw new UserFieldsEmptyException("Input fields are missing");
+			}
 
-	@Override
-	public Optional<User> getUser(long UserId) {
+		}
+		UserDao.save(user);
 
-		return UserDao.findById(UserId);
+		return user;
+
 	}
 
 }

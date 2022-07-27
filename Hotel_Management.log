@@ -1,0 +1,101 @@
+2022-07-27 16:24:22Starting HotelManagementApplication using Java 17.0.3 on pavangh-w10 with PID 20356 (C:\Users\pavangh.CYBAMD\Desktop\Assignment\Hotel_Management\target\classes started by pavangh in C:\Users\pavangh.CYBAMD\Desktop\Assignment\Hotel_Management)
+2022-07-27 16:24:22No active profile set, falling back to default profiles: default
+2022-07-27 16:24:22Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-27 16:24:22Finished Spring Data repository scanning in 25 ms. Found 2 JPA repository interfaces.
+2022-07-27 16:24:22Tomcat initialized with port(s): 8080 (http)
+2022-07-27 16:24:22Starting service [Tomcat]
+2022-07-27 16:24:22Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-07-27 16:24:22At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-07-27 16:24:22Initializing Spring embedded WebApplicationContext
+2022-07-27 16:24:22Root WebApplicationContext: initialization completed in 612 ms
+2022-07-27 16:24:23HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-27 16:24:23HikariPool-2 - Starting...
+2022-07-27 16:24:23HikariPool-2 - Start completed.
+2022-07-27 16:24:23HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-07-27 16:24:23HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-27 16:24:23Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-27 16:24:23LiveReload server is running on port 35729
+2022-07-27 16:24:23spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-27 16:24:23Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-07-27 16:24:23Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-27 16:24:23Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-27 16:24:23Context refreshed
+2022-07-27 16:24:23Found 1 custom documentation plugin(s)
+2022-07-27 16:24:23Scanning for api listing references
+2022-07-27 16:24:23Generating unique operation named: deleteCourseUsingDELETE_1
+2022-07-27 16:24:23Started HotelManagementApplication in 1.333 seconds (JVM running for 245.784)
+2022-07-27 16:24:23Condition evaluation unchanged
+2022-07-27 16:24:39Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-27 16:24:39Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-27 16:24:39HikariPool-2 - Shutdown initiated...
+2022-07-27 16:24:39HikariPool-2 - Shutdown completed.
+2022-07-27 16:24:39Starting HotelManagementApplication using Java 17.0.3 on pavangh-w10 with PID 20356 (C:\Users\pavangh.CYBAMD\Desktop\Assignment\Hotel_Management\target\classes started by pavangh in C:\Users\pavangh.CYBAMD\Desktop\Assignment\Hotel_Management)
+2022-07-27 16:24:39No active profile set, falling back to default profiles: default
+2022-07-27 16:24:40Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-27 16:24:40Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-07-27 16:24:40Tomcat initialized with port(s): 8080 (http)
+2022-07-27 16:24:40Starting service [Tomcat]
+2022-07-27 16:24:40Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-07-27 16:24:40At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-07-27 16:24:40Initializing Spring embedded WebApplicationContext
+2022-07-27 16:24:40Root WebApplicationContext: initialization completed in 553 ms
+2022-07-27 16:24:40HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-27 16:24:40HikariPool-3 - Starting...
+2022-07-27 16:24:40HikariPool-3 - Start completed.
+2022-07-27 16:24:40HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-07-27 16:24:40HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-27 16:24:40Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-27 16:24:40LiveReload server is running on port 35729
+2022-07-27 16:24:40spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-27 16:24:40Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-07-27 16:24:40Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-27 16:24:40Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-27 16:24:40Context refreshed
+2022-07-27 16:24:40Found 1 custom documentation plugin(s)
+2022-07-27 16:24:40Scanning for api listing references
+2022-07-27 16:24:40Started HotelManagementApplication in 0.944 seconds (JVM running for 262.947)
+2022-07-27 16:24:40Condition evaluation unchanged
+2022-07-27 16:24:57Application shutdown requested.
+2022-07-27 16:24:57Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-27 16:24:57Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-27 16:24:57HikariPool-3 - Shutdown initiated...
+2022-07-27 16:24:57HikariPool-3 - Shutdown completed.
+2022-07-27 16:25:12Starting HotelManagementApplication using Java 17.0.3 on pavangh-w10 with PID 3408 (C:\Users\pavangh.CYBAMD\Desktop\Assignment\Hotel_Management\target\classes started by pavangh in C:\Users\pavangh.CYBAMD\Desktop\Assignment\Hotel_Management)
+2022-07-27 16:25:12No active profile set, falling back to default profiles: default
+2022-07-27 16:25:12Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-27 16:25:12For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-27 16:25:14Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-27 16:25:14Finished Spring Data repository scanning in 75 ms. Found 2 JPA repository interfaces.
+2022-07-27 16:25:14Tomcat initialized with port(s): 8080 (http)
+2022-07-27 16:25:14Starting service [Tomcat]
+2022-07-27 16:25:14Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-07-27 16:25:15At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-07-27 16:25:15Initializing Spring embedded WebApplicationContext
+2022-07-27 16:25:15Root WebApplicationContext: initialization completed in 2467 ms
+2022-07-27 16:25:15HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-27 16:25:15HHH000412: Hibernate ORM core version 5.4.30.Final
+2022-07-27 16:25:15HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-27 16:25:15HikariPool-1 - Starting...
+2022-07-27 16:25:16HikariPool-1 - Start completed.
+2022-07-27 16:25:16HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-07-27 16:25:17HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-27 16:25:17Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-27 16:25:17LiveReload server is running on port 35729
+2022-07-27 16:25:18spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-27 16:25:18Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-07-27 16:25:18Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-27 16:25:18Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-27 16:25:18Context refreshed
+2022-07-27 16:25:18Found 1 custom documentation plugin(s)
+2022-07-27 16:25:18Scanning for api listing references
+2022-07-27 16:25:19Generating unique operation named: deleteCourseUsingDELETE_1
+2022-07-27 16:25:19Started HotelManagementApplication in 6.927 seconds (JVM running for 8.013)
+2022-07-27 16:26:09Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-27 16:26:09Initializing Servlet 'dispatcherServlet'
+2022-07-27 16:26:09Completed initialization in 1 ms
+2022-07-27 16:26:09Get rooms
+2022-07-27 16:58:28Application shutdown requested.
+2022-07-27 16:58:28Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-27 16:58:28Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-27 16:58:28HikariPool-1 - Shutdown initiated...
+2022-07-27 16:58:28HikariPool-1 - Shutdown completed.

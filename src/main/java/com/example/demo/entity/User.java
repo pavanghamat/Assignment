@@ -7,8 +7,8 @@ import javax.persistence.Id;
 public class User {
 	
 	@Id
-	private String username;
 	private long userid;
+	private String username;
 	private String password;
 	
 	
@@ -43,21 +43,6 @@ public class User {
 	public User() {
 		super();
 		// TODO Auto-generated constructor stub
-	}
 	
-	
-
-	/*
-	 * public User() { super(); // TODO Auto-generated constructor stub }
-	 * 
-	 * @Override public String toString() { return "Users [userid=" + userid +
-	 * ", password=" + password + "]"; } public User(int userid, String password) {
-	 * super(); this.userid = userid; this.password = password; } public int
-	 * getUserid() { return userid; } public void setUserid(int userid) {
-	 * this.userid = userid; } public String getPassword() { return password; }
-	 * public void setPassword(String password) { this.password = password; }
-	 */
-	
-	
-
+}
 }

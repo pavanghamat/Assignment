@@ -10,7 +10,7 @@ import com.example.demo.exception.RoomNotFoundException;
 
 public interface RoomService {
 public List<Room>getRooms();
-public Optional<Room> getRoom(long RoomId);
+public Optional<Room> getRoom(long RoomId) throws RoomNotFoundException;
 public Room addRoom(Room Room) throws RoomAlreadyExistException, RoomFieldsEmptyException, Exception,RoomFieldsEmptyException;
 //public Room updateRoom(Room room) throws RoomNotFoundException, RoomAlreadyExistException;
 public void deleteRoom(long parseLong) throws RoomNotFoundException;

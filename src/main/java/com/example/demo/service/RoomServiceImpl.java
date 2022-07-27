@@ -29,9 +29,12 @@ public class RoomServiceImpl implements RoomService {
 	}
 
 	@Override
-	public Optional<Room> getRoom(long RoomId) {
-
+	public Optional<Room> getRoom(long RoomId) throws RoomNotFoundException {
+		if (RoomDao.findById(RoomId).isEmpty()) {
+			throw new RoomNotFoundException("Room not found");}
+		else {
 		return RoomDao.findById(RoomId);
+	}
 	}
 
 	@Override

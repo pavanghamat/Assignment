@@ -28,51 +28,53 @@ import com.example.demo.service.UserService;
 @RequestMapping("/UserController")
 public class UserController {
 	
-	/*
-	 * Logger logger1 =LoggerFactory.getLogger(UserController.class);
-	 * 
-	 * @GetMapping("/message") public String getMessage() {
-	 * logger1.info("[getMessage] info message");
-	 * logger1.warn("[getMessage] warn message");
-	 * logger1.error("[getMessage] error message"); return
-	 * "open console to check log message"; }
-	 */
+	Logger logger = LoggerFactory.getLogger(UserController.class);
 
+	@GetMapping("/message")
+	public String getMessage() {
+		logger.info("[getMessage] info message");
+		logger.warn("[getMessage] warn message");
+		logger.error("[getMessage] error message");
+
+		return "open console to check log message";
+	}
 
 	@Autowired
-	private UserService UserService;
+private UserService UserService;
 
 	@GetMapping("/Users")
 	public ResponseEntity<List<User>> getUsers() {
-		
+		logger.info("Get list of all Users");
+
 		return ResponseEntity.status(HttpStatus.OK).body(this.UserService.getUsers());
 	}
 
 	@GetMapping("/User/{UserId}")
 	public ResponseEntity<Optional<User>> getUser(@PathVariable long UserId) throws UserNotFoundException {
+		logger.info("Get user using Id");
 
 		return ResponseEntity.status(HttpStatus.OK).body(this.UserService.getUser((UserId)));
 	}
-	
-	@PostMapping("/addUser")
-	public ResponseEntity<User> addUser(@RequestBody User User) throws UserAlreadyExistException,UserFieldsEmptyException, RoomFieldsEmptyException {
 
+	@PostMapping("/addUser")
+	public ResponseEntity<User> addUser(@RequestBody User User)
+			throws UserAlreadyExistException, UserFieldsEmptyException, RoomFieldsEmptyException {
+		logger.info("New user added");
 		return ResponseEntity.status(HttpStatus.OK).body(this.UserService.addUser(User));
 	}
 
 	@DeleteMapping("/User/{UserId}")
-	public ResponseEntity<Object> deleteCourse(@PathVariable long UserId) throws UserNotFoundException{
-
+	public ResponseEntity<Object> deleteCourse(@PathVariable long UserId) throws UserNotFoundException {
+		logger.info("Delete user");
 		this.UserService.deleteUser(UserId);
 		return new ResponseEntity<>(HttpStatus.OK);
 
 	}
 
-	
-	
-	 @PutMapping("/User")
-     public ResponseEntity<User> updateUser(@RequestBody User User) throws UserNotFoundException, UserFieldsEmptyException {
-
+	@PutMapping("/User")
+	public ResponseEntity<User> updateUser(@RequestBody User User)
+			throws UserNotFoundException, UserFieldsEmptyException {
+		logger.info("Update User");
 		return ResponseEntity.status(HttpStatus.OK).body(this.UserService.updateUser(User));
 	}
 }

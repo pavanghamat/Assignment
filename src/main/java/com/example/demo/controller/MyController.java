@@ -3,7 +3,6 @@ package com.example.demo.controller;
 import java.util.List;
 import java.util.Optional;
 
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,11 +24,11 @@ import com.example.demo.exception.RoomFieldsEmptyException;
 import com.example.demo.exception.RoomNotFoundException;
 
 @RestController
-@RequestMapping("/RoomController") 
+@RequestMapping("/RoomController")
 public class MyController {
-	
-	Logger logger =LoggerFactory.getLogger(MyController.class);
-	
+
+	Logger logger = LoggerFactory.getLogger(MyController.class);
+
 	@GetMapping("/message")
 	public String getMessage() {
 		logger.info("[getMessage] info message");
@@ -38,13 +37,13 @@ public class MyController {
 
 		return "open console to check log message";
 	}
+
 	@Autowired
 	private RoomService RoomService;
 
-
 	@GetMapping("/Rooms")
-	public ResponseEntity<List<Room>>getRooms() {
-		logger.info("Get list of all rooms");
+	public ResponseEntity<List<Room>> getRooms() {
+		logger.info("Request for all rooms");
 
 		return ResponseEntity.status(HttpStatus.OK).body(this.RoomService.getRooms());
 	}
@@ -52,38 +51,37 @@ public class MyController {
 	@GetMapping("/Rooms/{RoomId}")
 	public ResponseEntity<Optional<Room>> getRoom(@PathVariable String RoomId) throws RoomNotFoundException {
 
-		logger.info("Get one room using RoomId");
+		logger.info("Request for one room");
 		return ResponseEntity.status(HttpStatus.OK).body(this.RoomService.getRoom(Long.parseLong(RoomId)));
 	}
 
 	@PostMapping("/addRooms")
-	public ResponseEntity<Room> addRoom(@RequestBody Room Room) throws Exception,RoomAlreadyExistException,RoomCountException,RoomFieldsEmptyException {
-		logger.info("Add New room");
+	public ResponseEntity<Room> addRoom(@RequestBody Room Room)
+			throws Exception, RoomAlreadyExistException, RoomCountException, RoomFieldsEmptyException {
+		logger.info("Request to add New room");
 		return ResponseEntity.status(HttpStatus.OK).body(this.RoomService.addRoom(Room));
 	}
 
 	@PutMapping("/Rooms")
-	public ResponseEntity<Room> updateRoom(@RequestBody Room Room) throws RoomNotFoundException, RoomAlreadyExistException, RoomFieldsEmptyException {
+	public ResponseEntity<Room> updateRoom(@RequestBody Room Room)
+			throws RoomNotFoundException, RoomAlreadyExistException, RoomFieldsEmptyException {
 
-		logger.info("Update room");
+		logger.info("request to Update room");
 		return ResponseEntity.status(HttpStatus.OK).body(this.RoomService.updateRoom(Room));
 	}
 
 	@DeleteMapping("/Rooms/{RoomId}")
 	public ResponseEntity<Object> deleteCourse(@PathVariable String RoomId)
 			throws NumberFormatException, RoomNotFoundException {
-		logger.info("Delete Room");
+		logger.info("requet to Delete Room");
 		this.RoomService.deleteRoom(Long.parseLong(RoomId));
 		return new ResponseEntity<>(HttpStatus.OK);
 
 	}
+
 	@GetMapping("/home")
 	public String home() {
 		return "Welcome to Room Services";
 	}
-	//**************************************************************************************************************************************
-	//**************************************************************************************************************************************
-	
-	
 
 }

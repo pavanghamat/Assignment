@@ -42,6 +42,21 @@ public class GlobalExceptionHandler {
 	public ResponseEntity<String> userNotFoundException(UserNotFoundException userNotFoundException){
 		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(userNotFoundException.getMessage());	
 	}
+	@ResponseBody
+	@ExceptionHandler(UserFieldsEmptyException.class)
+	public ResponseEntity<String> userFieldsEmptyException(UserFieldsEmptyException userFieldsEmptyException){
+		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(userFieldsEmptyException.getMessage());	
+	}
+	
+	@ResponseBody
+	@ExceptionHandler(UserAlreadyExistException.class)
+	public ResponseEntity<String> userAlreadyExistException(UserAlreadyExistException userAlreadyExistException){
+		return ResponseEntity.status(HttpStatus.FOUND).body(userAlreadyExistException.getMessage());	
+	
+	}
+	//***************************************************************************************************************************************************
+		//***************************************************************************************************************************************************
+		//***************************************************************************************************************************************************
 
 }
 

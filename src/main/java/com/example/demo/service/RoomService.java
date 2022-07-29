@@ -14,6 +14,6 @@ public Optional<Room> getRoom(long RoomId) throws RoomNotFoundException;
 public Room addRoom(Room Room) throws RoomAlreadyExistException, RoomFieldsEmptyException, Exception,RoomFieldsEmptyException;
 //public Room updateRoom(Room room) throws RoomNotFoundException, RoomAlreadyExistException;
 public void deleteRoom(long parseLong) throws RoomNotFoundException;
-Room updateRoom(Room room) throws RoomAlreadyExistException, RoomNotFoundException, RoomFieldsEmptyException;
+public Room updateRoom(Room room) throws RoomAlreadyExistException, RoomNotFoundException, RoomFieldsEmptyException;
 
 }

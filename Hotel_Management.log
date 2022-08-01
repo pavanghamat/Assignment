@@ -1,119 +1,416 @@
-2022-07-29 11:07:17Starting HotelManagementApplication using Java 17.0.3 on pavangh-w10 with PID 26160 (C:\Users\pavangh.CYBAMD\Desktop\Assignment\Hotel_Management\target\classes started by pavangh in C:\Users\pavangh.CYBAMD\Desktop\Assignment\Hotel_Management)
-2022-07-29 11:07:17No active profile set, falling back to default profiles: default
-2022-07-29 11:07:17Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-07-29 11:07:17For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-07-29 11:07:18Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-07-29 11:07:18Finished Spring Data repository scanning in 106 ms. Found 3 JPA repository interfaces.
-2022-07-29 11:07:19Tomcat initialized with port(s): 8080 (http)
-2022-07-29 11:07:19Starting service [Tomcat]
-2022-07-29 11:07:19Starting Servlet engine: [Apache Tomcat/9.0.45]
-2022-07-29 11:07:20At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2022-07-29 11:07:20Initializing Spring embedded WebApplicationContext
-2022-07-29 11:07:20Root WebApplicationContext: initialization completed in 2764 ms
-2022-07-29 11:07:20HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-07-29 11:07:20HHH000412: Hibernate ORM core version 5.4.30.Final
-2022-07-29 11:07:20HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-07-29 11:07:20HikariPool-1 - Starting...
-2022-07-29 11:07:21HikariPool-1 - Start completed.
-2022-07-29 11:07:21HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2022-07-29 11:07:22HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-07-29 11:07:22Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-07-29 11:07:22LiveReload server is running on port 35729
-2022-07-29 11:07:23spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-07-29 11:07:23Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2022-07-29 11:07:23Initializing ExecutorService 'applicationTaskExecutor'
-2022-07-29 11:07:24Tomcat started on port(s): 8080 (http) with context path ''
-2022-07-29 11:07:24Context refreshed
-2022-07-29 11:07:24Found 1 custom documentation plugin(s)
-2022-07-29 11:07:24Scanning for api listing references
-2022-07-29 11:07:24Generating unique operation named: deleteCourseUsingDELETE_1
-2022-07-29 11:07:24Generating unique operation named: getMessageUsingGET_1
-2022-07-29 11:07:24Generating unique operation named: deleteCourseUsingDELETE_2
-2022-07-29 11:07:24Generating unique operation named: getMessageUsingGET_2
-2022-07-29 11:07:24Started HotelManagementApplication in 7.86 seconds (JVM running for 9.249)
-2022-07-29 11:08:00Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-29 11:08:00Initializing Servlet 'dispatcherServlet'
-2022-07-29 11:08:00Completed initialization in 1 ms
-2022-07-29 11:10:24Application shutdown requested.
-2022-07-29 11:10:25Shutting down ExecutorService 'applicationTaskExecutor'
-2022-07-29 11:10:25Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-07-29 11:10:25HikariPool-1 - Shutdown initiated...
-2022-07-29 11:10:25HikariPool-1 - Shutdown completed.
-2022-07-29 13:01:53Starting HotelManagementApplication using Java 17.0.3 on pavangh-w10 with PID 4196 (C:\Users\pavangh.CYBAMD\Desktop\Assignment\Hotel_Management\target\classes started by pavangh in C:\Users\pavangh.CYBAMD\Desktop\Assignment\Hotel_Management)
-2022-07-29 13:01:53No active profile set, falling back to default profiles: default
-2022-07-29 13:01:53Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-07-29 13:01:53For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-07-29 13:01:54Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-07-29 13:01:54Finished Spring Data repository scanning in 90 ms. Found 3 JPA repository interfaces.
-2022-07-29 13:01:55Tomcat initialized with port(s): 8080 (http)
-2022-07-29 13:01:55Starting service [Tomcat]
-2022-07-29 13:01:55Starting Servlet engine: [Apache Tomcat/9.0.45]
-2022-07-29 13:01:55At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2022-07-29 13:01:55Initializing Spring embedded WebApplicationContext
-2022-07-29 13:01:55Root WebApplicationContext: initialization completed in 2370 ms
-2022-07-29 13:01:55HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-07-29 13:01:55HHH000412: Hibernate ORM core version 5.4.30.Final
-2022-07-29 13:01:56HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-07-29 13:01:56HikariPool-1 - Starting...
-2022-07-29 13:01:56HikariPool-1 - Start completed.
-2022-07-29 13:01:56HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2022-07-29 13:01:57HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-07-29 13:01:57Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-07-29 13:01:57LiveReload server is running on port 35729
-2022-07-29 13:01:58spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-07-29 13:01:58Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2022-07-29 13:01:58Initializing ExecutorService 'applicationTaskExecutor'
-2022-07-29 13:01:58Tomcat started on port(s): 8080 (http) with context path ''
-2022-07-29 13:01:58Context refreshed
-2022-07-29 13:01:58Found 1 custom documentation plugin(s)
-2022-07-29 13:01:58Scanning for api listing references
-2022-07-29 13:01:59Generating unique operation named: deleteCourseUsingDELETE_1
-2022-07-29 13:01:59Generating unique operation named: getMessageUsingGET_1
-2022-07-29 13:01:59Generating unique operation named: deleteCourseUsingDELETE_2
-2022-07-29 13:01:59Generating unique operation named: getMessageUsingGET_2
-2022-07-29 13:01:59Started HotelManagementApplication in 6.468 seconds (JVM running for 7.633)
-2022-07-29 13:02:09Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-29 13:02:09Initializing Servlet 'dispatcherServlet'
-2022-07-29 13:02:09Completed initialization in 1 ms
-2022-07-29 13:05:58Shutting down ExecutorService 'applicationTaskExecutor'
-2022-07-29 13:05:58Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-07-29 13:05:58HikariPool-1 - Shutdown initiated...
-2022-07-29 13:05:58HikariPool-1 - Shutdown completed.
-2022-07-29 13:05:58Starting HotelManagementApplication using Java 17.0.3 on pavangh-w10 with PID 4196 (C:\Users\pavangh.CYBAMD\Desktop\Assignment\Hotel_Management\target\classes started by pavangh in C:\Users\pavangh.CYBAMD\Desktop\Assignment\Hotel_Management)
-2022-07-29 13:05:58No active profile set, falling back to default profiles: default
-2022-07-29 13:05:59Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-07-29 13:05:59Finished Spring Data repository scanning in 38 ms. Found 3 JPA repository interfaces.
-2022-07-29 13:05:59Tomcat initialized with port(s): 8080 (http)
-2022-07-29 13:05:59Starting service [Tomcat]
-2022-07-29 13:05:59Starting Servlet engine: [Apache Tomcat/9.0.45]
-2022-07-29 13:05:59At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2022-07-29 13:05:59Initializing Spring embedded WebApplicationContext
-2022-07-29 13:05:59Root WebApplicationContext: initialization completed in 628 ms
-2022-07-29 13:05:59HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-07-29 13:05:59HikariPool-2 - Starting...
-2022-07-29 13:05:59HikariPool-2 - Start completed.
-2022-07-29 13:05:59HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2022-07-29 13:05:59HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-07-29 13:05:59Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-07-29 13:05:59LiveReload server is running on port 35729
-2022-07-29 13:05:59spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-07-29 13:05:59Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2022-07-29 13:05:59Initializing ExecutorService 'applicationTaskExecutor'
-2022-07-29 13:06:00Tomcat started on port(s): 8080 (http) with context path ''
-2022-07-29 13:06:00Context refreshed
-2022-07-29 13:06:00Found 1 custom documentation plugin(s)
-2022-07-29 13:06:00Scanning for api listing references
-2022-07-29 13:06:00Generating unique operation named: deleteCourseUsingDELETE_1
-2022-07-29 13:06:00Generating unique operation named: getMessageUsingGET_1
-2022-07-29 13:06:00Generating unique operation named: deleteCourseUsingDELETE_2
-2022-07-29 13:06:00Generating unique operation named: getMessageUsingGET_2
-2022-07-29 13:06:00Started HotelManagementApplication in 1.32 seconds (JVM running for 248.597)
-2022-07-29 13:06:00Condition evaluation unchanged
-2022-07-29 13:06:05Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-29 13:06:05Initializing Servlet 'dispatcherServlet'
-2022-07-29 13:06:05Completed initialization in 2 ms
-2022-07-29 14:44:19Application shutdown requested.
-2022-07-29 14:44:19Shutting down ExecutorService 'applicationTaskExecutor'
-2022-07-29 14:44:19Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-07-29 14:44:19HikariPool-2 - Shutdown initiated...
-2022-07-29 14:44:19HikariPool-2 - Shutdown completed.
+2022-08-01 10:33:51Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-01 10:33:52Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 10:33:52HikariPool-1 - Shutdown initiated...
+2022-08-01 10:33:52HikariPool-1 - Shutdown completed.
+2022-08-01 10:33:52Starting HotelManagementApplication using Java 17.0.3 on pavangh-w10 with PID 13152 (C:\Users\pavangh.CYBAMD\Desktop\Assignment\Hotel_Management\target\classes started by pavangh in C:\Users\pavangh.CYBAMD\Desktop\Assignment\Hotel_Management)
+2022-08-01 10:33:52No active profile set, falling back to default profiles: default
+2022-08-01 10:33:52Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-01 10:33:52Finished Spring Data repository scanning in 36 ms. Found 3 JPA repository interfaces.
+2022-08-01 10:33:53Tomcat initialized with port(s): 8080 (http)
+2022-08-01 10:33:53Starting service [Tomcat]
+2022-08-01 10:33:53Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-08-01 10:33:53At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-08-01 10:33:53Initializing Spring embedded WebApplicationContext
+2022-08-01 10:33:53Root WebApplicationContext: initialization completed in 892 ms
+2022-08-01 10:33:53HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-01 10:33:53HikariPool-2 - Starting...
+2022-08-01 10:33:53HikariPool-2 - Start completed.
+2022-08-01 10:33:53HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-08-01 10:33:53Failed to initialize JPA EntityManagerFactory: @Temporal should only be set on a java.util.Date or java.util.Calendar property: com.example.demo.entity.Reservation.res_Date
+2022-08-01 10:33:53Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @Temporal should only be set on a java.util.Date or java.util.Calendar property: com.example.demo.entity.Reservation.res_Date
+2022-08-01 10:33:53HikariPool-2 - Shutdown initiated...
+2022-08-01 10:33:53HikariPool-2 - Shutdown completed.
+2022-08-01 10:33:53Stopping service [Tomcat]
+2022-08-01 10:33:53
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-01 10:33:53Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @Temporal should only be set on a java.util.Date or java.util.Calendar property: com.example.demo.entity.Reservation.res_Date
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329) ~[spring-boot-2.4.5.jar:2.4.5]
+	at com.example.demo.HotelManagementApplication.main(HotelManagementApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.5.jar:2.4.5]
+Caused by: org.hibernate.AnnotationException: @Temporal should only be set on a java.util.Date or java.util.Calendar property: com.example.demo.entity.Reservation.res_Date
+	at org.hibernate.cfg.annotations.SimpleValueBinder.setType(SimpleValueBinder.java:188) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.cfg.annotations.PropertyBinder.makePropertyAndValue(PropertyBinder.java:185) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.cfg.annotations.PropertyBinder.makePropertyValueAndBind(PropertyBinder.java:205) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:2299) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.cfg.AnnotationBinder.processIdPropertiesIfNotAlready(AnnotationBinder.java:979) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:806) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:248) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:239) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:282) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 22 common frames omitted
+2022-08-01 12:33:31Starting HotelManagementApplication using Java 17.0.3 on pavangh-w10 with PID 13152 (C:\Users\pavangh.CYBAMD\Desktop\Assignment\Hotel_Management\target\classes started by pavangh in C:\Users\pavangh.CYBAMD\Desktop\Assignment\Hotel_Management)
+2022-08-01 12:33:31No active profile set, falling back to default profiles: default
+2022-08-01 12:33:32Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-01 12:33:32Finished Spring Data repository scanning in 36 ms. Found 3 JPA repository interfaces.
+2022-08-01 12:33:32Tomcat initialized with port(s): 8080 (http)
+2022-08-01 12:33:32Starting service [Tomcat]
+2022-08-01 12:33:32Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-08-01 12:33:32At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-08-01 12:33:32Initializing Spring embedded WebApplicationContext
+2022-08-01 12:33:32Root WebApplicationContext: initialization completed in 1129 ms
+2022-08-01 12:33:33HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-01 12:33:33HikariPool-3 - Starting...
+2022-08-01 12:33:33HikariPool-3 - Start completed.
+2022-08-01 12:33:33HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-08-01 12:33:33Failed to initialize JPA EntityManagerFactory: @Temporal should only be set on a java.util.Date or java.util.Calendar property: com.example.demo.entity.Reservation.res_Date
+2022-08-01 12:33:33Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @Temporal should only be set on a java.util.Date or java.util.Calendar property: com.example.demo.entity.Reservation.res_Date
+2022-08-01 12:33:33HikariPool-3 - Shutdown initiated...
+2022-08-01 12:33:33HikariPool-3 - Shutdown completed.
+2022-08-01 12:33:33Stopping service [Tomcat]
+2022-08-01 12:33:33
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-01 12:33:33Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @Temporal should only be set on a java.util.Date or java.util.Calendar property: com.example.demo.entity.Reservation.res_Date
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329) ~[spring-boot-2.4.5.jar:2.4.5]
+	at com.example.demo.HotelManagementApplication.main(HotelManagementApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.5.jar:2.4.5]
+Caused by: org.hibernate.AnnotationException: @Temporal should only be set on a java.util.Date or java.util.Calendar property: com.example.demo.entity.Reservation.res_Date
+	at org.hibernate.cfg.annotations.SimpleValueBinder.setType(SimpleValueBinder.java:188) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.cfg.annotations.PropertyBinder.makePropertyAndValue(PropertyBinder.java:185) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.cfg.annotations.PropertyBinder.makePropertyValueAndBind(PropertyBinder.java:205) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:2299) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.cfg.AnnotationBinder.processIdPropertiesIfNotAlready(AnnotationBinder.java:979) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:806) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:248) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:239) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:282) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 22 common frames omitted
+2022-08-01 14:09:14Starting HotelManagementApplication using Java 17.0.3 on pavangh-w10 with PID 5496 (C:\Users\pavangh.CYBAMD\Desktop\Assignment\Hotel_Management\target\classes started by pavangh in C:\Users\pavangh.CYBAMD\Desktop\Assignment\Hotel_Management)
+2022-08-01 14:09:14No active profile set, falling back to default profiles: default
+2022-08-01 14:09:14Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-01 14:09:14For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-01 14:09:15Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-01 14:09:15Finished Spring Data repository scanning in 89 ms. Found 3 JPA repository interfaces.
+2022-08-01 14:09:16Tomcat initialized with port(s): 8080 (http)
+2022-08-01 14:09:16Starting service [Tomcat]
+2022-08-01 14:09:16Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-08-01 14:09:16At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-08-01 14:09:16Initializing Spring embedded WebApplicationContext
+2022-08-01 14:09:16Root WebApplicationContext: initialization completed in 2176 ms
+2022-08-01 14:09:17HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-01 14:09:17HHH000412: Hibernate ORM core version 5.4.30.Final
+2022-08-01 14:09:17HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-01 14:09:17HikariPool-1 - Starting...
+2022-08-01 14:09:17HikariPool-1 - Start completed.
+2022-08-01 14:09:17HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-08-01 14:09:18Failed to initialize JPA EntityManagerFactory: @Temporal should only be set on a java.util.Date or java.util.Calendar property: com.example.demo.entity.Reservation.res_Date
+2022-08-01 14:09:18Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @Temporal should only be set on a java.util.Date or java.util.Calendar property: com.example.demo.entity.Reservation.res_Date
+2022-08-01 14:09:18HikariPool-1 - Shutdown initiated...
+2022-08-01 14:09:18HikariPool-1 - Shutdown completed.
+2022-08-01 14:09:18Stopping service [Tomcat]
+2022-08-01 14:09:18
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-01 14:09:18Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @Temporal should only be set on a java.util.Date or java.util.Calendar property: com.example.demo.entity.Reservation.res_Date
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at com.example.demo.HotelManagementApplication.main(HotelManagementApplication.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.hibernate.AnnotationException: @Temporal should only be set on a java.util.Date or java.util.Calendar property: com.example.demo.entity.Reservation.res_Date
+	at org.hibernate.cfg.annotations.SimpleValueBinder.setType(SimpleValueBinder.java:188)
+	at org.hibernate.cfg.annotations.PropertyBinder.makePropertyAndValue(PropertyBinder.java:185)
+	at org.hibernate.cfg.annotations.PropertyBinder.makePropertyValueAndBind(PropertyBinder.java:205)
+	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:2299)
+	at org.hibernate.cfg.AnnotationBinder.processIdPropertiesIfNotAlready(AnnotationBinder.java:979)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:806)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:248)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:239)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:282)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 22 common frames omitted
+2022-08-01 14:09:47Starting HotelManagementApplication using Java 17.0.3 on pavangh-w10 with PID 13152 (C:\Users\pavangh.CYBAMD\Desktop\Assignment\Hotel_Management\target\classes started by pavangh in C:\Users\pavangh.CYBAMD\Desktop\Assignment\Hotel_Management)
+2022-08-01 14:09:47No active profile set, falling back to default profiles: default
+2022-08-01 14:09:49Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-01 14:09:49Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+2022-08-01 14:09:49Tomcat initialized with port(s): 8080 (http)
+2022-08-01 14:09:49Starting service [Tomcat]
+2022-08-01 14:09:49Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-08-01 14:09:49At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-08-01 14:09:49Initializing Spring embedded WebApplicationContext
+2022-08-01 14:09:49Root WebApplicationContext: initialization completed in 2001 ms
+2022-08-01 14:09:50HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-01 14:09:50HikariPool-4 - Starting...
+2022-08-01 14:09:50HikariPool-4 - Start completed.
+2022-08-01 14:09:50HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-08-01 14:09:50Failed to initialize JPA EntityManagerFactory: @Temporal should only be set on a java.util.Date or java.util.Calendar property: com.example.demo.entity.Reservation.res_Date
+2022-08-01 14:09:50Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @Temporal should only be set on a java.util.Date or java.util.Calendar property: com.example.demo.entity.Reservation.res_Date
+2022-08-01 14:09:50HikariPool-4 - Shutdown initiated...
+2022-08-01 14:09:50HikariPool-4 - Shutdown completed.
+2022-08-01 14:09:50Stopping service [Tomcat]
+2022-08-01 14:09:50
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-01 14:09:50Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @Temporal should only be set on a java.util.Date or java.util.Calendar property: com.example.demo.entity.Reservation.res_Date
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.6.jar:5.3.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340) ~[spring-boot-2.4.5.jar:2.4.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329) ~[spring-boot-2.4.5.jar:2.4.5]
+	at com.example.demo.HotelManagementApplication.main(HotelManagementApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.5.jar:2.4.5]
+Caused by: org.hibernate.AnnotationException: @Temporal should only be set on a java.util.Date or java.util.Calendar property: com.example.demo.entity.Reservation.res_Date
+	at org.hibernate.cfg.annotations.SimpleValueBinder.setType(SimpleValueBinder.java:188) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.cfg.annotations.PropertyBinder.makePropertyAndValue(PropertyBinder.java:185) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.cfg.annotations.PropertyBinder.makePropertyValueAndBind(PropertyBinder.java:205) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:2299) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.cfg.AnnotationBinder.processIdPropertiesIfNotAlready(AnnotationBinder.java:979) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:806) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:248) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:239) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:282) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845) ~[spring-beans-5.3.6.jar:5.3.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-5.3.6.jar:5.3.6]
+	... 22 common frames omitted
+2022-08-01 14:10:09Starting HotelManagementApplication using Java 17.0.3 on pavangh-w10 with PID 13152 (C:\Users\pavangh.CYBAMD\Desktop\Assignment\Hotel_Management\target\classes started by pavangh in C:\Users\pavangh.CYBAMD\Desktop\Assignment\Hotel_Management)
+2022-08-01 14:10:09No active profile set, falling back to default profiles: default
+2022-08-01 14:10:09Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-01 14:10:09Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-08-01 14:10:10Tomcat initialized with port(s): 8080 (http)
+2022-08-01 14:10:10Starting service [Tomcat]
+2022-08-01 14:10:10Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-08-01 14:10:10At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-08-01 14:10:10Initializing Spring embedded WebApplicationContext
+2022-08-01 14:10:10Root WebApplicationContext: initialization completed in 615 ms
+2022-08-01 14:10:10HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-01 14:10:10HikariPool-5 - Starting...
+2022-08-01 14:10:10HikariPool-5 - Start completed.
+2022-08-01 14:10:10HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-08-01 14:10:10HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-01 14:10:10Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 14:10:10LiveReload server is running on port 35729
+2022-08-01 14:10:10spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-01 14:10:10Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 14:10:10Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-01 14:10:10Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-01 14:10:10Context refreshed
+2022-08-01 14:10:10Found 1 custom documentation plugin(s)
+2022-08-01 14:10:10Scanning for api listing references
+2022-08-01 14:10:10Started HotelManagementApplication in 1.284 seconds (JVM running for 249391.191)
+2022-08-01 14:10:10Condition evaluation unchanged
+2022-08-01 14:10:14Application shutdown requested.
+2022-08-01 14:10:14Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-01 14:10:14Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 14:10:14HikariPool-5 - Shutdown initiated...
+2022-08-01 14:10:14HikariPool-5 - Shutdown completed.
+2022-08-01 14:13:16Starting HotelManagementApplication using Java 17.0.3 on pavangh-w10 with PID 24484 (C:\Users\pavangh.CYBAMD\Desktop\Assignment\Hotel_Management\target\classes started by pavangh in C:\Users\pavangh.CYBAMD\Desktop\Assignment\Hotel_Management)
+2022-08-01 14:13:16No active profile set, falling back to default profiles: default
+2022-08-01 14:13:16Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-01 14:13:16For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-01 14:13:17Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-01 14:13:17Finished Spring Data repository scanning in 76 ms. Found 3 JPA repository interfaces.
+2022-08-01 14:13:18Tomcat initialized with port(s): 8080 (http)
+2022-08-01 14:13:18Starting service [Tomcat]
+2022-08-01 14:13:18Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-08-01 14:13:18At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-08-01 14:13:18Initializing Spring embedded WebApplicationContext
+2022-08-01 14:13:18Root WebApplicationContext: initialization completed in 2203 ms
+2022-08-01 14:13:18HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-01 14:13:18HHH000412: Hibernate ORM core version 5.4.30.Final
+2022-08-01 14:13:18HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-01 14:13:18HikariPool-1 - Starting...
+2022-08-01 14:13:19HikariPool-1 - Start completed.
+2022-08-01 14:13:19HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-08-01 14:13:19Failed to initialize JPA EntityManagerFactory: @Temporal should only be set on a java.util.Date or java.util.Calendar property: com.example.demo.entity.Reservation.res_Date
+2022-08-01 14:13:19Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @Temporal should only be set on a java.util.Date or java.util.Calendar property: com.example.demo.entity.Reservation.res_Date
+2022-08-01 14:13:19HikariPool-1 - Shutdown initiated...
+2022-08-01 14:13:19HikariPool-1 - Shutdown completed.
+2022-08-01 14:13:19Stopping service [Tomcat]
+2022-08-01 14:13:19
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-01 14:13:19Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @Temporal should only be set on a java.util.Date or java.util.Calendar property: com.example.demo.entity.Reservation.res_Date
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at com.example.demo.HotelManagementApplication.main(HotelManagementApplication.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.hibernate.AnnotationException: @Temporal should only be set on a java.util.Date or java.util.Calendar property: com.example.demo.entity.Reservation.res_Date
+	at org.hibernate.cfg.annotations.SimpleValueBinder.setType(SimpleValueBinder.java:188)
+	at org.hibernate.cfg.annotations.PropertyBinder.makePropertyAndValue(PropertyBinder.java:185)
+	at org.hibernate.cfg.annotations.PropertyBinder.makePropertyValueAndBind(PropertyBinder.java:205)
+	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:2299)
+	at org.hibernate.cfg.AnnotationBinder.processIdPropertiesIfNotAlready(AnnotationBinder.java:979)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:806)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:248)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:239)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:282)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 22 common frames omitted
+2022-08-01 14:14:18Starting HotelManagementApplication using Java 17.0.3 on pavangh-w10 with PID 2800 (C:\Users\pavangh.CYBAMD\Desktop\Assignment\Hotel_Management\target\classes started by pavangh in C:\Users\pavangh.CYBAMD\Desktop\Assignment\Hotel_Management)
+2022-08-01 14:14:18No active profile set, falling back to default profiles: default
+2022-08-01 14:14:18Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-01 14:14:18For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-01 14:14:19Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-01 14:14:19Finished Spring Data repository scanning in 78 ms. Found 3 JPA repository interfaces.
+2022-08-01 14:14:19Tomcat initialized with port(s): 8080 (http)
+2022-08-01 14:14:19Starting service [Tomcat]
+2022-08-01 14:14:19Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-08-01 14:14:20At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-08-01 14:14:20Initializing Spring embedded WebApplicationContext
+2022-08-01 14:14:20Root WebApplicationContext: initialization completed in 1943 ms
+2022-08-01 14:14:20HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-01 14:14:20HHH000412: Hibernate ORM core version 5.4.30.Final
+2022-08-01 14:14:20HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-01 14:14:20HikariPool-1 - Starting...
+2022-08-01 14:14:21HikariPool-1 - Start completed.
+2022-08-01 14:14:21HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-08-01 14:14:22HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-01 14:14:22Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 14:14:22LiveReload server is running on port 35729
+2022-08-01 14:14:22spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-01 14:14:22Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 14:14:22Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-01 14:14:23Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-01 14:14:23Context refreshed
+2022-08-01 14:14:23Found 1 custom documentation plugin(s)
+2022-08-01 14:14:23Scanning for api listing references
+2022-08-01 14:14:23Generating unique operation named: deleteCourseUsingDELETE_1
+2022-08-01 14:14:23Generating unique operation named: getMessageUsingGET_1
+2022-08-01 14:14:23Generating unique operation named: deleteCourseUsingDELETE_2
+2022-08-01 14:14:23Generating unique operation named: getMessageUsingGET_2
+2022-08-01 14:14:23Started HotelManagementApplication in 5.909 seconds (JVM running for 7.075)
+2022-08-01 16:27:44Application shutdown requested.
+2022-08-01 16:27:44Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-01 16:27:44Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 16:27:44HikariPool-1 - Shutdown initiated...
+2022-08-01 16:27:44HikariPool-1 - Shutdown completed.

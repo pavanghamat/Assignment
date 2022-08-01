@@ -3,6 +3,8 @@ package com.example.demo.controller;
 import java.util.List;
 import java.util.Optional;
 
+import javax.validation.Valid;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,7 +50,7 @@ public class ReservationController {
 	}
 
 	@GetMapping("/Reservations/{ReservationsId}")
-	public ResponseEntity<Optional<Reservation>> getReservation(@PathVariable String ReservationId) throws ReservationNotFoundException {
+	public ResponseEntity<Optional<Reservation>> getReservation(@Valid @PathVariable String ReservationId) throws ReservationNotFoundException {
 
 		logger.info("Request for one Reservation");
 		return ResponseEntity.status(HttpStatus.OK)
@@ -56,19 +58,19 @@ public class ReservationController {
 	}
 
 	@PostMapping("/addReservations")
-	public ResponseEntity<Reservation> addReservation(@RequestBody Reservation Reservation) throws ReservationAlreadyExistException, ReservationFieldEmptyException, ReservationNotFoundException {
+	public ResponseEntity<Reservation> addReservation(@Valid @RequestBody Reservation Reservation) throws ReservationAlreadyExistException, ReservationFieldEmptyException, ReservationNotFoundException {
 		logger.info("Request to add New Reservation");
 		return ResponseEntity.status(HttpStatus.OK).body(this.ReservationService.addReservation(Reservation));
 	}
 
 	@PutMapping("/updateReservations")
-	public ResponseEntity<Reservation> updateReservation(@RequestBody Reservation Reservation) throws ReservationAlreadyExistException, ReservationFieldEmptyException, ReservationNotFoundException {
+	public ResponseEntity<Reservation> updateReservation(@Valid @RequestBody Reservation Reservation) throws ReservationAlreadyExistException, ReservationFieldEmptyException, ReservationNotFoundException {
 		 logger.info("request to Update Reservation");
 		return ResponseEntity.status(HttpStatus.OK).body(this.ReservationService.updateReservation(Reservation));
 	}
 
 	@DeleteMapping("/Reservations/{ReservationId}")
-	public ResponseEntity<Object> deleteCourse(@PathVariable String ReservationId) throws ReservationNotFoundException {
+	public ResponseEntity<Object> deleteCourse(@Valid @PathVariable String ReservationId) throws ReservationNotFoundException {
 		logger.info("requet to Delete Reservation");
 		this.ReservationService.deleteReservation(Long.parseLong(ReservationId));
 		return new ResponseEntity<>(HttpStatus.OK);

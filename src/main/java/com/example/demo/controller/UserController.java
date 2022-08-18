@@ -77,4 +77,12 @@ private UserService UserService;
 		logger.info("Update User");
 		return ResponseEntity.status(HttpStatus.OK).body(this.UserService.updateUser(User));
 	}
+	@PostMapping("/signinUser")
+	public ResponseEntity<?> signinUser(@RequestBody User signinUser) {
+		//logger.info("New user added");
+		return ResponseEntity.status(HttpStatus.OK).body(this.UserService.signinUser(signinUser));
+	}
+
+	
+	
 }

@@ -11,7 +11,7 @@ import com.example.demo.exception.ReservationNotFoundException;
 public interface ReservationService {
 	public List<Reservation>getReservations();
 	public Optional<Reservation> getReservation(long ReservationId) throws ReservationNotFoundException;
-	public Reservation addReservation(Reservation reservation) throws ReservationAlreadyExistException, ReservationFieldEmptyException, ReservationNotFoundException;
+	public Reservation addReservation(Reservation reservation) throws ReservationAlreadyExistException, ReservationFieldEmptyException;
 	public Reservation updateReservation(Reservation reservation) throws ReservationAlreadyExistException,ReservationFieldEmptyException, ReservationNotFoundException;
 	public void deleteReservation(long reservationId) throws ReservationNotFoundException;
 	

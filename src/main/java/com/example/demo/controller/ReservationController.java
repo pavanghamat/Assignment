@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
@@ -37,7 +38,6 @@ public class ReservationController {
 		logger.error("[getMessage] error message");
 		return "open console to check log message";
 	}
-	
 
 	@Autowired
 	private ReservationService ReservationService;
@@ -50,27 +50,39 @@ public class ReservationController {
 	}
 
 	@GetMapping("/Reservations/{ReservationsId}")
-	public ResponseEntity<Optional<Reservation>> getReservation(@Valid @PathVariable String ReservationId) throws ReservationNotFoundException {
-
+	public ResponseEntity<Optional<Reservation>> getReservation(@PathVariable String ReservationsId)
+			throws ReservationNotFoundException {
 		logger.info("Request for one Reservation");
+		// logger.info("reservation id",)
 		return ResponseEntity.status(HttpStatus.OK)
-				.body(this.ReservationService.getReservation(Long.parseLong(ReservationId)));
+				.body(this.ReservationService.getReservation(Long.parseLong(ReservationsId)));
 	}
 
 	@PostMapping("/addReservations")
-	public ResponseEntity<Reservation> addReservation(@Valid @RequestBody Reservation Reservation) throws ReservationAlreadyExistException, ReservationFieldEmptyException, ReservationNotFoundException {
+	public ResponseEntity<?> addReservation(@Valid @RequestBody Reservation Reservation)
+			throws ReservationAlreadyExistException, ReservationFieldEmptyException {
 		logger.info("Request to add New Reservation");
+		
+
+		LocalDate startDate = Reservation.getStart_Date().toLocalDate();
+		if (startDate.isBefore(LocalDate.now()))
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Start date shoud be greater than todays date");
+		LocalDate endDate = Reservation.getEnd_Date().toLocalDate();
+		if (endDate.isBefore(startDate.plusDays(1)))
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("End date shoud be greater than start date");
 		return ResponseEntity.status(HttpStatus.OK).body(this.ReservationService.addReservation(Reservation));
 	}
 
 	@PutMapping("/updateReservations")
-	public ResponseEntity<Reservation> updateReservation(@Valid @RequestBody Reservation Reservation) throws ReservationAlreadyExistException, ReservationFieldEmptyException, ReservationNotFoundException {
-		 logger.info("request to Update Reservation");
+	public ResponseEntity<Reservation> updateReservation(@Valid @RequestBody Reservation Reservation)
+			throws ReservationAlreadyExistException, ReservationFieldEmptyException, ReservationNotFoundException {
+		logger.info("request to Update Reservation");
 		return ResponseEntity.status(HttpStatus.OK).body(this.ReservationService.updateReservation(Reservation));
 	}
 
 	@DeleteMapping("/Reservations/{ReservationId}")
-	public ResponseEntity<Object> deleteCourse(@Valid @PathVariable String ReservationId) throws ReservationNotFoundException {
+	public ResponseEntity<Object> deleteCourse(@Valid @PathVariable String ReservationId)
+			throws ReservationNotFoundException {
 		logger.info("requet to Delete Reservation");
 		this.ReservationService.deleteReservation(Long.parseLong(ReservationId));
 		return new ResponseEntity<>(HttpStatus.OK);

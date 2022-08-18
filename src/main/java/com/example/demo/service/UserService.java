@@ -18,5 +18,6 @@ import com.example.demo.exception.UserNotFoundException;
 	public Optional<User> getUser(long userId) throws UserNotFoundException;
 	public void deleteUser(long parseLong) throws UserNotFoundException;
 	//User getUser(long UserId);
+	public String signinUser(User signinUser);
 
 }

@@ -7,10 +7,13 @@ import javax.persistence.Id;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 @Entity
 public class Reservation {
 	@Id
 	private long ReservationId;
+	
 	
 	@NotEmpty
 	private String name;
@@ -20,12 +23,15 @@ public class Reservation {
 	private String email;
 	private long roomId;
 	private long hotelId;
-	private Date end_Date;
-	private int number_Of_Guest;
 	
-	private Date res_Date; 
+	@DateTimeFormat(pattern="YYYY-MM-DD")
+	private Date end_Date;
+	
+	private int number_Of_Guest;
+	private Date res_Date = new Date(System.currentTimeMillis());
 	private String res_Status;
 	private String comment;
+	@DateTimeFormat(pattern="YYYY-MM-DD")
 	private Date start_Date;
 	
 	
@@ -34,7 +40,7 @@ public class Reservation {
 		// TODO Auto-generated constructor stub
 	}
 	public Reservation(String name, String email, long roomId, long hotelId, Date start_Date,
-			Date end_Date, int number_Of_Guest, Date res_Date, String res_Status, String comment, long ReservationId) {
+			Date end_Date, int number_Of_Guest, Date res_Date, String res_Status, String comment, long ReservationId, String password) {
 		super();
 		this.ReservationId = ReservationId;
 		this.name = name;
@@ -47,6 +53,7 @@ public class Reservation {
 		this.res_Date = res_Date;
 		this.res_Status = res_Status;
 		this.comment = comment;
+		
 	}
 	public long getReservationId() {
 		return ReservationId;
@@ -78,12 +85,16 @@ public class Reservation {
 	public void setHotelId(long hotelId) {
 		this.hotelId = hotelId;
 	}
-	public Date getStart_Date() {
-		return start_Date;
-	}
-	public void setStart_Date(Date start_Date) {
-		this.start_Date = start_Date;
-	}
+	
+	
+		public Date getStart_Date() {
+			return start_Date;
+		}
+		
+		public void setStart_Date(Date start_Date) {
+			this.start_Date = start_Date;
+		}
+	
 	public Date getEnd_Date() {
 		return end_Date;
 	}
@@ -95,12 +106,6 @@ public class Reservation {
 	}
 	public void setNumber_Of_Guest(int number_Of_Guest) {
 		this.number_Of_Guest = number_Of_Guest;
-	}
-	public Date getRes_Date() {
-		return res_Date;
-	}
-	public void setRes_Date(Date res_Date) {
-		this.res_Date = res_Date;
 	}
 	public String getRes_Status() {
 		return res_Status;
@@ -116,7 +121,7 @@ public class Reservation {
 	}
 	@Override
 	public String toString() {
-		return "Reservation [ReservationId=" + ReservationId + ", name=" + name + ", email=" + email + ", roomId=" + roomId
+		return "Reservation [ReservationId=" + ReservationId + ", name=" + name + " email=" + email + ", roomId=" + roomId
 				+ ", hotelId=" + hotelId + ", start_Date=" + start_Date + ", end_Date=" + end_Date
 				+ ", number_Of_Guest=" + number_Of_Guest + ", res_Date=" + res_Date + ", res_Status=" + res_Status
 				+ ", comment=" + comment + "]";

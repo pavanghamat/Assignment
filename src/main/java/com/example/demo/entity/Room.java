@@ -7,9 +7,13 @@ import javax.persistence.Id;
 public class Room {
 	@Id
 	private long id;
+	//@NotEmpty
 	private long room_num;
+	//@NotEmpty
 	private String roomType;
+	//@NotEmpty
 	private double rate;
+	//@NotEmpty
 	private String status;
 
 	public Room(long id, long room_num, String roomType, double d, String status) {
@@ -104,3 +108,4 @@ public class Room {
  * + room_num + ", room_type=" + roomType + ", rate=" + rate + ", status=" +
  * status + "]"; }
  */
+

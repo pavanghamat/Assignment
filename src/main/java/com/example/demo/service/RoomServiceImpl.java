@@ -19,6 +19,8 @@ import com.example.demo.exception.RoomNotFoundException;
 @Service
 public class RoomServiceImpl implements RoomService {
 	
+	
+	
 Logger logger =LoggerFactory.getLogger(RoomServiceImpl.class);
 	
 	@GetMapping("/message")
@@ -40,6 +42,8 @@ Logger logger =LoggerFactory.getLogger(RoomServiceImpl.class);
 	@Override
 	public List<Room> getRooms() {
 		logger.info("Response to get list of all rooms");
+		
+		
 		return RoomDao.findAll();
 	}
 
@@ -58,6 +62,7 @@ Logger logger =LoggerFactory.getLogger(RoomServiceImpl.class);
 	@Override
 	public Room addRoom(Room room) throws RoomAlreadyExistException, Exception, RoomCountException,RoomFieldsEmptyException {
 		Optional<Room> roomcheck = RoomDao.findById(room.getId());
+	
 
 		if (roomcheck.isPresent()) {
 			logger.error("Room already exist error");

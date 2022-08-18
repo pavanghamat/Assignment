@@ -2,13 +2,16 @@ package com.example.demo.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.validation.constraints.NotEmpty;
 
 @Entity
 public class User {
 	
 	@Id
 	private long userid;
+	@NotEmpty
 	private String username;
+	@NotEmpty
 	private String password;
 	
 	

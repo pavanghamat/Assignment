@@ -109,6 +109,13 @@ Logger logger =LoggerFactory.getLogger(RoomServiceImpl.class);
 			logger.info("response to get single deleted user{}",user);
 		}
 	}
+
+	@Override
+	public String signinUser(User signinUser) {
+	User u = UserDao.findByUsernameAndPassword(signinUser.getUsername(),signinUser.getPassword()).orElseThrow();
+	
+	return "User found" ;
+	}
 	
 
 }
